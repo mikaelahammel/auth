@@ -1,3 +1,4 @@
+<% if @current_user%>
 <h1>My CRM</h1>
  
  <ul>
@@ -9,3 +10,7 @@
 </ul>
 
 <p><a href="/companies/new">Create a new company</a></p>
+
+<% else %>
+  <p>You must be logged in!</p>
+<% end %>
